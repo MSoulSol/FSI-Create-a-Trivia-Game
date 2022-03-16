@@ -4,7 +4,9 @@ for(let i=0; i<questions.length; i++){
 
         let question = questions[i]
         let userAnswer = window.prompt(questions[i].text)
-
+    if(userAnswer = question[i].correctAnswer){
+        console.log('Correct')
+    }
 
 
 }
