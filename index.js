@@ -1,4 +1,6 @@
 let userName =window.prompt('Please enter your name:')
+let userScore = 0
+let playAgain = true
 for(let i=0; i<questions.length; i++){
     console.log(questions[i])
 
@@ -10,4 +12,20 @@ for(let i=0; i<questions.length; i++){
     }
 
 }
+
 window.alert('Your score is' +userScore)
+
+function playGame () 
+while (playAgain === true){ 
+    playGame()
+let userChoice = window.prompt('Would you like to play the game again? Answer yes or no')
+if (userChoice === 'yes'){
+    playAgain = true
+}
+else {
+    playAgain = false
+    window.alert ('Thanks for playing the game!')
+}
+}
+    
+    
