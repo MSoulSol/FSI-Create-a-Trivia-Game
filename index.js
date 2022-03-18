@@ -6,7 +6,7 @@ for(let i=0; i<questions.length; i++){
 
         let question = questions[i]
         let userAnswer = window.prompt(questions[i].text)
-    if(userAnswer = questions[i].correctAnswer){
+    if(userAnswer === question.correctAnswer){
         console.log('Correct'), 
         userScore = userScore + 10
     }
